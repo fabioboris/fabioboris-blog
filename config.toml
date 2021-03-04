@@ -10,6 +10,8 @@ buildFuture = false
 enableInlineShortcodes = true
 enableRobotsTXT = true
 
+googleAnalytics = "UA-8392091-2"
+
 [minify]
 disableXML = true
 minifyOutput = true
@@ -22,12 +24,16 @@ comments = false
 defaultTheme = "auto" # auto, dark, light
 description = "Tecnologia da informação e educação" 
 disableSpecial1stPost = true 
-hidemeta = false 
+env = "production" 
+hideMeta = false 
 showReadingTime = true 
 showShareButtons = false 
-showtoc = false 
+showToc = false 
 title = "Fabio Agostinho Boris" 
-tocopen = false 
+tocOpen = false 
+
+# [params.analytics.google]
+# siteVerificationTag = "XYZabc"
 
 [params.profileMode]
 enabled = true
