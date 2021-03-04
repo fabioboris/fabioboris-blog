@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 9. Programação Orientada a Objetos"
-date: 2021-02-28T21:13:17-03:00
+date: 2021-03-10T20:50:20-03:00
 draft: true
 tags: ["js", "poo", "prototype", "class", "herança"]
 categories: ["Notas de Aulas", "JavaScript"]

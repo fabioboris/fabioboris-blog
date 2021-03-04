@@ -1,7 +1,7 @@
 ---
 title: "Notas de Aulas de JavaScript: 8. Programação Assíncrona"
-date: 2021-02-28T21:13:16-03:00
-draft: false
+date: 2021-03-10T20:50:10-03:00
+draft: true
 tags: ["js", "callbacks", "async"]
 categories: ["Notas de Aulas", "JavaScript"]
 ---

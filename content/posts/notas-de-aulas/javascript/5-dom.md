@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 5. DOM"
-date: 2021-02-28T21:13:13-03:00
+date: 2021-03-03T20:50:10-03:00
 draft: false
 tags: ["js", "dom"]
 categories: ["Notas de Aulas", "JavaScript"]

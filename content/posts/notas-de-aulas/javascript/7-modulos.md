@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 7. Módulos"
-date: 2021-02-28T21:13:15-03:00
+date: 2021-03-03T20:50:30-03:00
 draft: false
 tags: ["js", "modules", "commonjs"]
 categories: ["Notas de Aulas", "JavaScript"]

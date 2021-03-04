@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 3. Escopo, Variáveis e Funções"
-date: 2021-02-28T21:13:11-03:00
+date: 2021-02-24T20:50:30-03:00
 draft: false
 tags: ["js", "escopo", "variáveis", "funções"]
 categories: ["Notas de Aulas", "JavaScript"]

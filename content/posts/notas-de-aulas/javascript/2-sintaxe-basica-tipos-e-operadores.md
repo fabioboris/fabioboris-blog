@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 2. Sintaxe Básica, Tipos e Operadores"
-date: 2021-02-28T21:13:10-03:00
+date: 2021-02-24T20:50:20-03:00
 draft: false
 tags: ["js", "tipos", "operadores"]
 categories: ["Notas de Aulas", "JavaScript"]

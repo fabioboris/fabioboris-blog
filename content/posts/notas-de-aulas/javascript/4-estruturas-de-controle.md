@@ -1,6 +1,6 @@
 ---
 title: "Notas de Aulas de JavaScript: 4. Estruturas de Controle"
-date: 2021-02-28T21:13:12-03:00
+date: 2021-02-24T20:50:40-03:00
 draft: false
 tags: ["js", "if", "switch", "while", "for", "for-in", "for-of", "try-catch"]
 categories: ["Notas de Aulas", "JavaScript"]
