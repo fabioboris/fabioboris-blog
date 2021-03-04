@@ -1,0 +1,9 @@
+# Generated files by hugo
+/public/*
+!/public/CNAME
+/resources/_gen/
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux

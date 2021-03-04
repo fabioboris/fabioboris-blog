@@ -1,0 +1,100 @@
+baseURL = "https://fabioboris.com.br/"
+languageCode = "pt-br"
+paginate = 10
+theme = "PaperMod"
+title = "Blog do Prof. Fabio"
+
+buildDrafts = false
+buildExpired = false
+buildFuture = false
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+comments = false
+defaultTheme = "dark"
+description = "Tecnologia da informação e educação"
+disableSpecial1stPost = true
+hidemeta = false
+showReadingTime = true
+showShareButtons = false
+showtoc = false
+title = "Fabio Agostinho Boris"
+tocopen = false
+
+[params.profileMode]
+enabled = true
+subtitle = "Tecnologia da informação e educação"
+title = "Fabio Agostinho Boris"
+
+# [[params.profileMode.buttons]]
+# name = "Arquivo"
+# url = "/archives"
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/fabioboris"
+
+[[params.socialIcons]]
+name = "GitHub"
+url = "https://github.com/fabioboris"
+
+[[params.socialIcons]]
+name = "Twitter"
+url = "https://twitter.com/faboris"
+
+[[params.socialIcons]]
+name = "Facebook"
+url = "https://fb.me/fabioboris"
+
+[[params.socialIcons]]
+name = "Instagram"
+url = "https://ig.me/fabio.boris"
+
+[[params.socialIcons]]
+name = "RSS"
+url = "index.xml"
+
+# [params.homeInfoParams]
+# title = "Fabio Agostinho Boris"
+# content = "Tecnologia da informação e educação"
+
+[params.fuseOpts]
+distance = 1000
+isCaseSensitive = false
+keys = ["title", "permalink", "summary", "content"]
+location = 0
+minMatchCharLength = 0
+shouldSort = true
+threshold = 0.4
+
+[[menu.main]]
+identifier = "archives"
+name = "Arquivo"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+identifier = "categories"
+name = "Categorias"
+url = "/categories/"
+weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "Pesquisar"
+url = "/search/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 40
