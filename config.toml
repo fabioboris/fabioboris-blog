@@ -18,16 +18,16 @@ minifyOutput = true
 home = ["HTML", "RSS", "JSON"]
 
 [params]
-comments = false
-defaultTheme = "dark"
-description = "Tecnologia da informação e educação"
-disableSpecial1stPost = true
-hidemeta = false
-showReadingTime = true
-showShareButtons = false
-showtoc = false
-title = "Fabio Agostinho Boris"
-tocopen = false
+comments = false 
+defaultTheme = "auto" # auto, dark, light
+description = "Tecnologia da informação e educação" 
+disableSpecial1stPost = true 
+hidemeta = false 
+showReadingTime = true 
+showShareButtons = false 
+showtoc = false 
+title = "Fabio Agostinho Boris" 
+tocopen = false 
 
 [params.profileMode]
 enabled = true
