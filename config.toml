@@ -12,6 +12,8 @@ enableRobotsTXT = true
 
 googleAnalytics = "UA-8392091-2"
 
+# disqusShortname = "fabioboris"
+
 [minify]
 disableXML = true
 minifyOutput = true
@@ -20,29 +22,49 @@ minifyOutput = true
 home = ["HTML", "RSS", "JSON"]
 
 [params]
-comments = false 
+author = "Me"
+# comments = true 
 defaultTheme = "auto" # auto, dark, light
 description = "Tecnologia da informação e educação" 
 disableSpecial1stPost = true 
 env = "production" 
 hideMeta = false 
+showBreadCrumbs = true 
+showPostNavLinks = true 
 showReadingTime = true 
 showShareButtons = false 
-showToc = false 
+showToc = true 
 title = "Fabio Agostinho Boris" 
-tocOpen = false 
+tocOpen = true 
+
+# [params.assets]
+# favicon = "favicon.png"
+# favicon16x16 = "favicon16.png"
+# favicon32x32 = "favicon32.png"
+# apple_touch_icon = "apple-touch.png"
+# safari_pinned_tab = "safari-pinned.png"
 
 # [params.analytics.google]
 # siteVerificationTag = "XYZabc"
+
+# [params.cover]
+# hidden = true
+# hiddenInList = true
+# hiddenInSingle = true
+
+# [params.label]
+# icon = "/icon.png"
+# iconHeight = 35
+# text = "Home"
 
 [params.profileMode]
 enabled = true
 subtitle = "Tecnologia da informação e educação"
 title = "Fabio Agostinho Boris"
 
-# [[params.profileMode.buttons]]
-# name = "Arquivo"
-# url = "/archives"
+[[params.profileMode.buttons]]
+name = "Últimas postagens"
+url = "/posts"
 
 [[params.socialIcons]]
 name = "LinkedIn"

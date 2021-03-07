@@ -2,5 +2,5 @@
 title: "Arquivo"
 layout: "archives"
 # url: "/archives"
-summary: "archives"
+# summary: "Arquivo de postagens"
 ---
