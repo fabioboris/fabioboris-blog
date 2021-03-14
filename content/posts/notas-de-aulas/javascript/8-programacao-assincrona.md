@@ -255,5 +255,5 @@ async function getAllResources(){
   return Promise.all(promises);
 }
 
-[posts, comments, albums, photos, todos, users] = await getAllResources();
+const [posts, comments, albums, photos, todos, users] = await getAllResources();
 ```
