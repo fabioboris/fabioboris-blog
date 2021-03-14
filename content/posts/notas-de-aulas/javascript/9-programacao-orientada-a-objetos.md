@@ -1,6 +1,7 @@
 ---
 title: "Notas de Aulas de JavaScript: 9. Programação Orientada a Objetos"
 date: 2021-03-07T15:30:10-03:00
+lastmod: 2021-03-13T21:50:10-03:00
 draft: false
 tags: ["js", "objetos", "prototype", "class", "herança", "monkeypatch"]
 categories: ["Notas de Aulas", "JavaScript"]
@@ -10,8 +11,15 @@ categories: ["Notas de Aulas", "JavaScript"]
 ## Programação orientada a objetos
 
 JavaScript é uma linguagem de programação baseada em protótipos (*prototype-based language*), onde propriedades e métodos podem ser compartilhadas entre objetos.
+Algumas características interessantes sobre objetos em JavaScript:
 
-Em JavaScript, tudo funciona como um objeto, exceto os valores `null` e `undefined`.
+* Quase todos objetos JavaScript são instâncias de `Object`.
+* Um objeto típico herda as propriedades e métodos de `Object.prototype`.
+* Propriedades e métodos de `prototype` podem ser sobrescritas.
+* As alterações em `prototype` podem ser vistas por todos os objetos descendentes.
+* O construtor `Object` cria um objeto *wrapper* para um valor dado.
+* O construtor `Object` cria um objeto vazio para os valores `null` e `undefined`.
+
 Um erro comum é acreditar que números inteiros (literais) não podem ser usados como objetos, pois o ponto `.` faz com que o interpretador o interprete como um número de ponto flutuante.
 
 ```js
@@ -22,6 +30,8 @@ Um erro comum é acreditar que números inteiros (literais) não podem ser usado
 123..toString(); // "123"
 123 .toString(); // "123"
 ```
+
+Veja mais em [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object).
 
 
 ### Implementação com `prototype`
