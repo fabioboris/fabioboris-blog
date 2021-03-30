@@ -1,6 +1,7 @@
 ---
 title: "Notas de Aulas de JavaScript: 4. Estruturas de Controle"
 date: 2021-02-24T20:50:40-03:00
+lastmod: 2021-03-30T15:15:00-03:00
 draft: false
 tags: ["js", "if", "switch", "while", "for", "for-in", "for-of", "try-catch"]
 categories: ["Notas de Aulas", "JavaScript"]
@@ -12,20 +13,24 @@ categories: ["Notas de Aulas", "JavaScript"]
 ### if-else
 
 ```js
+// desvio condicional simples
 if (condição)
   instrução;
 
+// desvio condicional simples com mais de uma instrução
 if (condição) {
   instrução1;
   instrução2;
 }
 
+// desvio condicional composto
 if (condição) {
   instrução1;
 } else {
   instrução2;
 }
 
+// desvio condicional encadeado
 if (condição1) {
   instrução1;
 } else if (condição2) {
@@ -33,8 +38,11 @@ if (condição1) {
 } else {
   instrução3;
 }
+```
 
-// exemplo: comparar dois números inteiros fornecidos pelo usuário.
+**Exemplo:** comparar dois números inteiros fornecidos pelo usuário.
+
+```js
 const n1 = parseInt(prompt("Por favor, digite um número inteiro."));
 const n2 = parseInt(prompt("Por favor, digite mais um número inteiro."));
 
@@ -54,6 +62,7 @@ alert(resp);
 ### switch
 
 ```js
+// estrutura de seleção / múltipla escolha
 switch (expressão) {
   case valor1:
     instrução1;
@@ -64,8 +73,12 @@ switch (expressão) {
   default:
     instrução3;
 }
+```
 
-// exemplo: um conceito para uma nota de 1 a 5
+
+**Exemplo:** mostrar um conceito entre, muito ruim, ruim, regular, bom ou muito bom, para valores numéricos de 1 a 5.
+
+```js
 let num = parseInt(prompt("Por favor, digite um número inteiro de 1 a 5"));
 
 switch(num) {
@@ -93,10 +106,15 @@ switch(num) {
 ### while
 
 ```js
-// while (expressão)
-//   instrução;
+// estrutura de repetição pré condicional
+while (expressão)
+  instrução;
+```
 
-// exemplo: listar os números de 1 até 10
+
+**Exemplo:** listar no console os números de 1 até 10.
+
+```js
 let contador = 1;
 while (contador <= 10) {
   console.log(contador);
@@ -108,11 +126,16 @@ while (contador <= 10) {
 ### do-while
 
 ```js
-// do {
-//   instrução;
-// } while (expressão);
+// estrutura de repetição pós condicional
+do {
+  instrução;
+} while (expressão);
+```
 
-// exemplo: interromper o loop quando o usuário digitar SAIR
+
+**Exemplo:** interromper um loop quando o usuário digitar "SAIR"
+
+```js
 let comando;
 do {
   comando = window.prompt("Para terminar, digite SAIR.");
@@ -123,10 +146,15 @@ do {
 ### for
 
 ```js
-// for (expressãoInicial; condição; expressãoDeIncremento)
-//   instrução;
+// estrutura de repetição preparada
+for (expressãoInicial; condição; expressãoDeIncremento)
+  instrução;
+```
 
-// exemplo: listar os números de 1 até 10
+
+**Exemplo:** listar no console os números de 1 até 10.
+
+```js
 for (let contador = 1; contador <= 10; contador++) {
   console.log(contador);
 }
@@ -136,10 +164,14 @@ for (let contador = 1; contador <= 10; contador++) {
 ### for-in
 
 ```js
-// for (variável in objeto)
-//   instrução;
+for (variável in objeto)
+  instrução;
+```
 
-// exemplo: iterar os atributos de um objeto e mostrar seus valores
+
+**Exemplo:** iterar os atributos de um objeto e mostrar seus valores.
+
+```js
 let objeto = { nome: "Fulano", email: "fulano@gmail.com" };
 for (let atributo in objeto) {
   console.log(`O atributo ${atributo} tem valor ${objeto[atributo]}`);
@@ -150,10 +182,14 @@ for (let atributo in objeto) {
 ### for-of
 
 ```js
-// for (variável of objeto)
-//   instrução;
+for (variável of objeto)
+  instrução;
+```
 
-// exemplo: iterar os itens de um array e mostrar seus valores
+
+**Exemplo:** iterar os itens de um array e mostrar seus valores.
+
+```js
 let frutas = ["Laranja", "Banana", "Abacate"];
 for (let item of frutas) {
   console.log(item);
@@ -164,9 +200,13 @@ for (let item of frutas) {
 ### break
 
 ```js
-// break [rótulo];
+break [rótulo];
+```
 
-// exemplo: interromper o loop quando o usuário digitar SAIR
+
+**Exemplo:** interromper um loop quando o usuário digitar "SAIR".
+
+```js
 let comando;
 while(true) {
   comando = window.prompt("Para terminar, digite SAIR.")
@@ -178,9 +218,13 @@ while(true) {
 ### continue
 
 ```js
-// continue [rótulo];
+continue [rótulo];
+```
 
-// somar apenas os números pares
+
+**Exemplo:** somar apenas os números pares.
+
+```js
 let i, n, s;
 for (i = 0, s = 0; i < 10; i++) {
   n = parseFloat(window.prompt("Digite um número:"));
@@ -188,6 +232,22 @@ for (i = 0, s = 0; i < 10; i++) {
   s += n;
 }
 console.log("Soma:", s);
+```
+
+
+**Exemplo:** demonstração do uso de rótulos (*labels*).
+
+```js
+let i, j;
+loop_i:
+for (i = 1; i <= 10; i++) {
+  loop_j:
+  for (j = 10; j >= 1; j--) {
+    // avançar loop_i quando i e j forem iguais
+    if (j === i) continue loop_i;
+    console.log(`${i}\t${j}`);
+  }
+}
 ```
 
 
