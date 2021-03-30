@@ -1,6 +1,7 @@
 ---
 title: "Notas de Aulas de JavaScript: 3. Escopo, Variáveis e Funções"
 date: 2021-02-24T20:50:30-03:00
+lastmod: 2021-03-30T15:00:00-03:00
 draft: false
 tags: ["js", "escopo", "variáveis", "funções"]
 categories: ["Notas de Aulas", "JavaScript"]
@@ -102,7 +103,7 @@ resp = soma(12, 21); // resp vale 33
 ### Funções anônimas
 
 ```js
-// a variável soma2 recebe como valor uma função
+// a variável soma_v2 recebe como valor uma função
 // que recebe dois valores como parâmetros
 // e que retorna como valor a soma desses dois parâmetros
 soma_v2 = function(num1, num2) {
@@ -116,18 +117,18 @@ resp = soma_v2(1, 10); // resp vale 11
 
 ```js
 // exemplo similar ao anterior
-// a declaração é feita com a sintaxe conhecida como *arrow function*
+// a declaração é feita com a sintaxe conhecida como *arrow function*, =>
 soma_v3 = (num1, num2) => {
   return num1 + num2;
 }
 resp = soma_v3(2, 20); // resp vale 22
 
 // exemplo similar ao anterior
-// arrows functions sem as chaves {} retornam o valor de sua expressão
+// arrow functions sem as chaves {} retornam o valor de sua expressão
 soma_v4 = (num1, num2) => num1 + num2;
 resp = soma_v4(5, 10); // resp vale 15
 
-// arrows function com apenas um argumento dispensam parênteses
+// arrow function com apenas um argumento dispensam parênteses
 dobro = num => 2 * num;
 resp = dobro(8); // resp vale 16
 ```
@@ -150,6 +151,8 @@ let pessoa = {
 };
 console.log(pessoa.nomeCompleto());
 ```
+
+Veja mais sobre métodos em: [9. Programação Orientada a Objetos](../9-programacao-orientada-a-objetos)
 
 
 ### Funções autoexecutáveis
