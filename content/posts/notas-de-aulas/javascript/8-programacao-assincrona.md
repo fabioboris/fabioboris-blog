@@ -28,7 +28,7 @@ Mais informações sobre o funcionamento do *event loop* em <https://developer.m
 
 ### Um primeiro exemplo
 
-No seguinte trecho de código, a função `exemplo` executa uma instrução síncrona, segioda de uma instrução assíncrona com um `callback` a partir da função `setTimeout`, uma instrução assíncrona com uma `Promise`, e finalmente, uma última instrução síncrona. Observe o resultado:
+No seguinte trecho de código, a função `exemplo` executa uma instrução síncrona, seguida de uma instrução assíncrona com um `callback` a partir da função `setTimeout`, uma instrução assíncrona com uma `Promise`, e finalmente, uma última instrução síncrona. Observe o resultado:
 
 ```js
 function exemplo(){
@@ -58,7 +58,7 @@ exemplo();
 Um *callback* é uma função passada como argumento para outra função.
 Dessa forma, a função que a recebeu pode executá-la ou passá-la adiante.
 
-No exemplo a seguir são declaradas duas funções `clicouNoDocumento`, usada no evento `click` do documento, e `mostrarMensagem` que é passada para `setTimeout` para ser executada somente após 10 segundos. 
+No exemplo a seguir são declaradas duas funções: `clicouNoDocumento`, usada no evento `click` do documento, e `mostrarMensagem` que é passada para `setTimeout` para ser executada somente após 10 segundos. 
 
 ```js
 function clicouNoDocumento(){
@@ -78,7 +78,7 @@ setTimeout(mostrarMensagem, 10000);
 
 #### Sequência de *callbacks* executados de forma assíncrona
 
-Nesse exemplo, uma sequência de instruções `setTimeout` disparam `callbacks` que enviam mensagem com `console.log`, entretanto, devido ao tempo programado em `setTimeout`, e pelo fato da execução acontecer de forma assíncrona, a ordem do resultado acontece da última para a primeira instrução.
+No próximo exemplo, uma sequência de instruções `setTimeout` disparam `callbacks` que enviam mensagem com `console.log`, entretanto, devido ao tempo programado em `setTimeout`, e pelo fato da execução acontecer de forma assíncrona, a ordem do resultado acontece da última para a primeira instrução.
 
 ```js
 function sequenciaDeChanadas_V1(){
