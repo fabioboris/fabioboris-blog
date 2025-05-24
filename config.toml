@@ -1,6 +1,5 @@
 baseURL = "https://fabioboris.com.br/"
 languageCode = "pt-br"
-paginate = 10
 theme = "PaperMod"
 title = "Blog do Prof. Fabio"
 
@@ -20,6 +19,11 @@ minifyOutput = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
 author = "Me"
@@ -65,10 +69,6 @@ title = "Fabio Agostinho Boris"
 [[params.profileMode.buttons]]
 name = "Últimas postagens"
 url = "/posts"
-
-[[params.socialIcons]]
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/fabioboris"
 
 [[params.socialIcons]]
 name = "GitHub"
@@ -126,3 +126,6 @@ identifier = "tags"
 name = "Tags"
 url = "/tags/"
 weight = 40
+
+[pagination]
+pagerSize = 10
