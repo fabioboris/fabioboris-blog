@@ -76,7 +76,7 @@ typeof []; // "object"
 
 ```js
 123 + 321; // adição: 123 mais 321 igual a 444
-98 – 87;   // subtração: 98 menos 87 igual a 11
+98 - 87;   // subtração: 98 menos 87 igual a 11
 5 * 2;     // multiplicação: 5 vezes 2 igual a 10
 12 / 4;    // divisão: 12 dividido por 4 igual a 3
 5 % 2;     // resto da divisão: 5 dividido por 2 sobra 1
@@ -228,7 +228,7 @@ console.log(frutas[0], "é uma ótima fruta."); // Laranja é uma ótima fruta.
 valor = "10" + "5"; // concatenação: "105"
 valor = "10" + 5;   // concatenação: "105"
 valor = 10 + "5";   // concatenação: "105"
-valor = "10" – 5;   // subtração: 5 ¯\_(ツ)_/¯
+valor = "10" - 5;   // subtração: 5 ¯\_(ツ)_/¯
 valor = "10" * 5;   // multiplicação: 50
 ```
 
